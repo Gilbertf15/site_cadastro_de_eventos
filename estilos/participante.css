@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --cor0: #2f4673;
+  --cor1: #bf9039;
+  --cor2: #f26e22;
+  --cor3: #f23005;
+  --cor4: #bf0404;
+  --cor5: #bf040485;
+}
+
+body {
+  margin: 0;
+  background-image: url(/img/BG.webp);
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.main_login {
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.esquerda_login {
+  width: 50vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.esquerda_login > h1 {
+  font-size: 2.3vw;
+  color: var(--cor0);
+}
+
+.esquerda_img {
+  width: 35vw;
+}
+
+.direita_login {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_login {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px 25px 35px;
+  border: 3px solid var(--cor0);
+  background: #ffffff8c;
+  backdrop-filter: blur(100px);
+  border-radius: 20px;
+}
+
+.card_login h2 {
+  color: var(--cor0);
+  font-size: 2.3rem; 
+  text-align: center; 
+  font-weight: 800;
+
+  margin: 0;
+}
+
+.text_field {
+  width: 100%;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.text_field input {
+  width: 100%;
+  border: 2px solid var(--cor5);
+  border-radius: 0.8rem;
+  padding: 15px;
+  background: #fff;
+  font-size: 1.1rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.text_field label {
+  color: var(--cor0);
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-left: 2.5px;
+}
+
+.text_field input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.span_part {
+  font-size: 11px;
+  margin: 3px 0 0 1px;
+  color: var(--cor4);
+  display: none;
+}
+.bnt_part,
+.btn_home {
+  text-decoration: none;
+  display: block; 
+  width: 75%; 
+  padding: 1rem 2.8rem; 
+  font-size: 1.1rem; 
+  margin: 20px auto; 
+  border: 2px solid transparent; 
+  border-radius: 4rem; 
+  text-transform: uppercase; 
+  font-weight: 800; 
+  letter-spacing: 3px; 
+  color: white; 
+  background: var(--cor4); 
+  cursor: pointer; 
+  text-align: center; 
+  transition: 0.3s ease; 
+}
+
+.bnt_part:hover,
+.btn_home:hover {
+  background: transparent; 
+  color: var(--cor0); 
+  border: 2px solid var(--cor0); 
+  transform: scale(1.05); 
+}
+
+.highlight_blue {
+  color: rgb(5, 2, 89);
+  font-weight: bold;
+}
+
+.forgot_password {
+  text-align: center; 
+  margin-top: 15px;
+}
+.forgot_password a {
+  color: gray; 
+  text-decoration: none; 
+  font-weight: bold; 
+  transition: color 0.3s ease; 
+}
+
+.forgot_password a:hover {
+  color: rgb(5, 2, 89); 
+  text-decoration: none; 
+}
+
+
+@media only screen and (max-width: 950px) {
+  .card_login {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main_login {
+    flex-direction: column;
+  }
+  .esquerda_login h1 {
+    display: none;
+  }
+  .esquerda_login {
+    width: 100%;
+    height: auto;
+  }
+  .direita_login {
+    width: 100%;
+    height: auto;
+  }
+  .esquerda_img {
+    width: 50vw;
+  }
+  .card_login {
+    width: 90%;
+  }
+}

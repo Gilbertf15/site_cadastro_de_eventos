@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --cor0: #2f4673;
+  --cor1: #bf9039;
+  --cor2: #f26e22;
+  --cor3: #f23005;
+  --cor4: #bf0404;
+  --cor5: #bf040485;
+}
+
+body {
+  margin: 0;
+  background-image: url(/img/BG.webp);
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.main_cadastro {
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.esquerda_cadastro {
+  width: 50vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.esquerda_cadastro > h1 {
+  font-size: 3vw;
+  color: var(--cor0);
+}
+
+.esquerda_img {
+  width: 35vw;
+}
+
+.direita_cadastro {
+  width: 50vw;
+  top: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_cadastro {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 28px 35px 25px 35px;
+  border: 3px solid var(--cor0);
+  background: #ffffff8c;
+  backdrop-filter: blur(100px);
+  border-radius: 20px;
+}
+
+.card_cadastro h2 {
+  color: var(--cor0);
+  font-size: 3.1rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.text_field {
+  width: 100%;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.text_field input {
+  width: 100%;
+  border: 2px solid var(--cor5);
+  border-radius: 0.8rem;
+  padding: 15px;
+  background: #fff;
+  font-size: 1.1rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.text_field label {
+  color: var(--cor0);
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-left: 2.5px;
+}
+
+.text_field input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.span_requi {
+  font-size: 11px;
+  margin: 3px 0 0 1px;
+  color: var(--cor4);
+  display: none;
+}
+#result_cad {
+  font-size: 11px;
+  margin: 3px 0 0 1px;
+  height: 100%;
+  display: none;
+}
+
+.bnt_cadastro,
+.btn_home {
+  display: block; 
+  width: 75%; 
+  padding: 1rem 2.8rem; 
+  font-size: 1.1rem; 
+  margin: 20px auto; 
+  border: 2px solid transparent; 
+  border-radius: 4rem; 
+  text-transform: uppercase; 
+  font-weight: 800; 
+  letter-spacing: 3px; 
+  color: white; 
+  background: var(--cor4); 
+  cursor: pointer; 
+  text-align: center; 
+  transition: 0.3s ease; 
+}
+
+.bnt_cadastro:hover,
+.btn_home:hover {
+  background: transparent; 
+  color: var(--cor0); 
+  border: 2px solid var(--cor0); 
+  transform: scale(1.05); 
+}
+
+
+.styled-select {
+  width: 200px;
+  padding: 10px;
+  border: 2px solid var(--cor5); 
+  border-radius: 8px; 
+  font-size: 16px;
+  background-color: #f9f9f9;
+  color: #333; 
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  transition: 0.5s;
+}
+
+
+.styled-select:hover {
+  background-color: #f9f9f9; 
+  border-color: var(--cor4); 
+}
+
+
+.styled-select:focus {
+  border-color: var(--cor4);
+}
+
+.styled-select option {
+  padding: 10px;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+a  p {
+  text-align: center;
+  margin: auto;
+}
+a:hover {
+  color: var(--cor0);
+}
+
+@media only screen and (max-width: 950px) {
+  .card_cadastro {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main_cadastro {
+    flex-direction: column;
+  }
+  .esquerda_cadastro h1 {
+    display: none;
+  }
+  .esquerda_cadatro {
+    width: 100%;
+    height: auto;
+  }
+  .direita_cadastro {
+    width: 100%;
+    height: auto;
+  }
+  .esquerda_img {
+    width: 50vw;
+  }
+  .card_cadastro {
+    width: 90%;
+  }
+}

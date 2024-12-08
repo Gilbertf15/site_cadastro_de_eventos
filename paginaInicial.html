@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EventPlanet - Gestão de eventos</title>
+    <link rel="stylesheet" href="estilos/style.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/193026a715.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <a href="#h" class="logo">Event <span>Planet</span></a>
+
+      <nav class="navbar">
+        <a href="paginaInicial.html">Home</a>
+        <a href="#">Sobre</a>
+        <a href="#">Eventos</a>
+        <a href="contato.html">Contato</a>
+        <a href="#login">Criar perfil <i class="fa-solid fa-down-long"></i></a>
+      </nav>
+      <!-- Barra de Pesquisa-->
+      <form class="search-bar" action="#" method="get">
+        <input type="text" placeholder="Buscar..." name="search" />
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+
+      <!-- Meu perfil -->
+      <nav class="navbar" id="perfil"><a href="meuPerfil.html">meu perfil</a></nav>
+    </header>
+
+    <section class="home section-hover">
+  <div>
+    <h1>Quem Somos ?</h1>
+    <p>
+      Somos habitantes do planeta Concórdia, dedicados a conectar todos os planetas do universo através de eventos memoráveis. <br>
+      Nossa missão é celebrar a diversidade cultural e promover a troca de ideias e tradições entre diferentes mundos.
+    </p>
+    <h1>Por que Escolher a Event<span>Planet?</span></h1>
+    <p>
+      <i class="fa-solid fa-list-check"></i><span>Gerenciamento Eficiente:</span> Centralizamos tudo para facilitar sua gestão.<br>
+      <i class="fa-solid fa-laptop"></i><span>Acessibilidade:</span> Compatível com todos os dispositivos.<br>
+      <i class="fa-solid fa-pen-to-square"></i><span>Personalização:</span> Personalize cada detalhe do seu evento para torná-lo único.
+    </p>
+  </div>
+  <img src="img/concordia.png" alt="">
+</section>
+
+    <!-- About  -->
+    <section class="about" >
+      <h2 id="about">Onde Atuamos</h2>
+      <div class="about-content">
+        <div class="about-item">
+          <p>FAUNA</p>
+          <img src="img/fauna.png" alt="planeta fauna">
+        </div>
+        <div class="about-item">
+          <p>AGRU</p>
+          <img src="img/agru.png" alt="planeta agru">
+        </div>
+        <div class="about-item">
+          <p>CIVITA</p>
+          <img src="img/civita.png" alt="planeta civita" id="civita">
+        </div>
+        <div class="about-item">
+          <p>CONCÓRDIA</p>
+          <img src="img/concordia.png" alt="Planeta concordia">
+        </div>
+    </div>
+
+    </section>
+    <!-- Timeline  -->
+    <section class="timeline-section">
+      <h2>O que Oferecemos</h2>
+      <div class="timeline-items">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Criação de Eventos:</h3>
+            <p>Crie eventos rapidamente e coloque-os no ar com facilidade.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Inscrições Simplificadas:</h3>
+            <p>Gerencie participantes de forma prática e eficaz.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Agendas Interativas:</h3>
+            <p>Mantenha todos informados com programações claras e organizadas.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Feedback Pós-Evento:</h3>
+            <p>Colete sugestões para aprimorar suas próximas edições.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Comunidade Ativa:</h3>
+            <p>Participe e colabore com outros organizadores e entusiastas.</p>
+          </div>
+        </div>
+      </div>
+      <button class="timeline"><p>Experimente agora</p></button>
+      
+    </section>
+    <!-- Services-->
+    <section class="services">
+      <h2 class="heading">Nossos Eventos Incluem</h2>
+      <div class="service-container">
+        <div class="services-box">
+          <i class="fa-solid fa-person-chalkboard"></i>
+          <h3>Palestras</h3>
+          <p>Aprenda com especialistas sobre temas relevantes e inovadores.</p>
+          <a href="#" class="btn">saiba mais</a>
+        </div>
+        <div class="services-box">
+          <i class="fa-solid fa-users"></i>
+          <h3>Workshops</h3>
+          <p>Participe de atividades práticas e adquira novas habilidades.</p>
+          <a href="#" class="btn">saiba mais</a>
+        </div>
+        <div class="services-box">
+          <i class="fa-solid fa-coins"></i>
+          <h3>Campanhas de Arrecadação</h3>
+          <p>Aprenda com especialistas sobre temas relevantes e inovadores.</p>
+          <a href="#" class="btn">saiba mais</a>
+        </div>
+      </div>
+    </section>
+    <div class="login" id="login">
+      <p>
+        se interessou pelos nossos serviços? clique no botão abaixo e faça seu <strong>cadastro</strong> para continuar acessando!
+      </p>
+      <a href="cadastro.html" class="timeline" ><p>clique aqui para cadastrar-se</p></a>
+      <p>
+        já possui conta? clique abaixo para fazer seu <strong>login</strong>!
+      </p>
+      <a href="organizador.html" class="timeline" ><p>clique aqui para realizar login <strong>Organizador</strong></p></a>
+    </p>
+    <a href="participante.html" class="timeline" ><p>clique aqui para realizar login <strong>Participante</strong></p></a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="copyright">
+        Siga-nos nas redes sociais para acompanhar nossos eventos e dicas de gestão!
+      </p>
+      <div class="social">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+      <p class="copyright">© 2024 Odysseia Estrelar | Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
